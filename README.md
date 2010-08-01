@@ -1,7 +1,7 @@
 qt-straightalpha
 ================
 
-Sometimes H.264 files in MP4 contains display significantly darker when viewed using Quicktime (or Safari's HTML5 <video> tag which uses Quicktime). One reason for this is that Quicktime poorly handles pixel data with alpha information by default.
+Sometimes H.264 files in MP4 containers play significantly darker when viewed using Quicktime (or Safari's HTML5 <video> tag which uses Quicktime) on a Windows PC. One reason for this is that Quicktime poorly handles pixel data with alpha information by default.
 qt-straightalpha will patch an MP4 file to tell quicktime to use the "Straight Alpha" graphics mode by altering the [vmhd](http://developer.apple.com/mac/library/documentation/QuickTime/QTFF/QTFFChap2/qtff2.html#//apple_ref/doc/uid/TP40000939-CH204-33012) atom.
 
 If you are seeing much darker videos in safari than in other browsers or if areas of white are showing as grey in Quicktime then give this script ago.
@@ -12,7 +12,8 @@ This is not the same as altering the [colr](http://www.google.com/url?sa=D&q=htt
 Requirements
 ------------
 
-You'll just need to have Ruby installed, Mac OS X comes with ruby. Untested on Windows but it should work.
+You'll just need to have Ruby installed. 
+Untested on Windows but it should work.
 
 
 Usage
