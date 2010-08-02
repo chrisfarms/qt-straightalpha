@@ -9,10 +9,8 @@ char MAGIC[] = {0x00,0x00,0x00,0x14,0x76,0x6D,0x68,0x64,0x00,0x00,0x00,0x01};
 char PATCH[] = {0x01,0x04,0xFF,0xFF,0xFF,0xFF,0xFF,0xFF};
 
 int found_magic_bytes(char *b, int *state){
-	if(*state < MAGIC_LEN && *b == MAGIC[*state]){
+	if(*state < MAGIC_LEN && *b == MAGIC[*state])
 		(*state)++;
-		printf("moved to state=%d %d vs %d\n",*state,*b,MAGIC[*state]);
-	}
 	return *state == MAGIC_LEN;
 }
 
