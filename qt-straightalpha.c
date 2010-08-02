@@ -22,6 +22,10 @@ int main(int argc, char *argv[]){
 	int state = 0;
 	char buf[1];
 	int fd = open(argv[1], O_RDWR);
+	if( fd == -1){
+		fprintf(stderr, "Cannot open %s\n", argv[1]);
+		return 1;
+	}
 	while( read(fd,buf,1) ){
 		if( found_magic_bytes(buf, &state) ){
 			printf("Patching...\n");
