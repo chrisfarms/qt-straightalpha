@@ -34,7 +34,7 @@ make && sudo make install
 Usage
 -----
 
-ruby ./qt-straightalpha movie.mp4
+./qt-straightalpha movie.mp4
 
 Your movie will be patched in place to save rewriting the whole file, so it's recommended that you operate on a copy it is important.
 
