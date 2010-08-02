@@ -12,8 +12,23 @@ This is *not* the same as altering the [colr](http://www.google.com/url?sa=D&q=h
 Requirements
 ------------
 
-You'll just need to have Ruby installed. 
-Untested on Windows but it should work.
+For the ruby script you will need Ruby.
+
+For the C-version you will need a suitable C build environment.
+
+
+Ruby Installation
+-----------------
+
+None. Just download the qt-straighalpha.rb script and run it with:
+ruby ./qt-straightalpha.rb movie.mp4
+
+
+Native Installation
+-------------------
+
+checkout the source, then run:
+make && sudo make install
 
 
 Usage
